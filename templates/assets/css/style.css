@@ -1124,7 +1124,7 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+/*.team .member {
   text-align: center;
   margin-bottom: 20px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -1173,7 +1173,7 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Contact
@@ -1183,6 +1183,7 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+  width: auto;
 }
 
 .contact .info-box i {
@@ -1210,6 +1211,7 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
+  margin: 0px 210px !important;
 }
 
 .contact .php-email-form .error-message {
@@ -1365,7 +1367,7 @@ section {
   color: #fff;
   border-top: 4px solid #16A300;
   text-align: center;
-  padding: 96px 20px;
+  padding: 20px 20px;
 }
 
 #footer .footer-top .footer-info .footer-info2 h3 {
