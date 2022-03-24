@@ -158,6 +158,14 @@ h1, h2, h3, h4, h5, h6 {
 #topbar .social-links a:hover {
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  #topbar .contact-info a {
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    font-size: 10px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -199,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -508,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .btn-get-started {
     font-size: 11px;
-    padding: 8px 26px;
+    padding: 8px 56px;
   }
 
 }
@@ -702,7 +710,7 @@ section {
 
 .clients img {
   width: 50%;
-  filter: grayscale(100);
+  /*filter: grayscale(100);*/
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
