@@ -1369,7 +1369,8 @@ section {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  margin-top: 130px;
+  width: 49%;
+  margin-left: 1%;
   background: #191919;
   color: #fff;
   border-top: 4px solid #0A7A34;
@@ -1378,6 +1379,8 @@ section {
 }
 #footer .footer-top .footer-info2 {
   margin-bottom: 15px;
+  width: 49%;
+  margin-right: 1%;
   background: #191919;
   color: #fff;
   border-top: 4px solid #0A7A34;
@@ -1519,7 +1522,17 @@ section {
 }
 
 @media (max-width: 575px) {
+  #footer .footer-top {
+    padding: 60px 10px;
+    
+  }
+
   #footer .footer-top .footer-info {
-    margin: -20px 0 30px 0;
+    width: 100%;
+    margin: 0px 2px 30px 2px;
+  }
+  #footer .footer-top .footer-info2 {
+    width: 100%;
+    margin: 0px 2px 30px 2px;
   }
 }
