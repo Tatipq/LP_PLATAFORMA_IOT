@@ -5,6 +5,7 @@
     $telefone = $_POST['subject'];
     $assunto = $_POST['assunto'];
     $mensagem = "<strong>Nome: </strong>".$nome;
+    $mensagem .= "<strong>Email: </strong>".$email;
     $mensagem .="<br> <strong> Mensagem: </strong>".$_POST['message'];
     $port = 465;
 
@@ -16,9 +17,9 @@
     $headers .= "Return-Path:  <arley.souto@hotmail.com>\n";
     $headers .= "MIME-Version: 1.0\n";
 
-    if (mail($para, $assunto, $mensagem, $headers, $port)){
-        echo "Email enviado com sucesso";
-    } else{
+    if (!mail($para, $assunto, $mensagem, $headers, $port)){
         echo "Erro ao enviar";
+    } else{
+        echo "Email enviado com sucesso";
     }
 ?>
