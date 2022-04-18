@@ -1,11 +1,11 @@
 <?php
-    $para = "wanderson.lopes@ibti.org.br";
+    $para = "w1andersong2l3@gmail.com";
     $nome = $_POST['name'];
     $email = $_POST['email'];
     $telefone = $_POST['subject'];
     $assunto = $_POST['assunto'];
     $mensagem = "<strong>Nome: </strong>".$nome;
-    $mensagem .= "<strong>Email: </strong>".$email;
+    $mensagem .= "<br><strong>Email: </strong>".$email;
     $mensagem .="<br> <strong> Mensagem: </strong>".$_POST['message'];
     $port = 465;
 
@@ -20,6 +20,6 @@
     if (!mail($para, $assunto, $mensagem, $headers, $port)){
         echo "Erro ao enviar";
     } else{
-        echo "Email enviado com sucesso";
+        echo  "<script>alert('Email enviado com Sucesso!');location.href=\"/index.html\";</script>";
     }
 ?>
