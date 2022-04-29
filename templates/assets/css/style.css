@@ -1319,6 +1319,11 @@ section {
     transform: rotate(360deg);
   }
 }
+
+.row {
+  padding-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .contact .php-email-form {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
