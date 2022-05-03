@@ -25,7 +25,7 @@
     if (!mail($para, $assunto, $mensagem, $headers, $port)){
         echo "Erro ao enviar";
     } else{
-        echo 'foi';
+        echo  "<script>alert('Email enviado com Sucesso!');location.href=\"/index.html\";</script>";
     }
 
 ?>
