@@ -1,5 +1,5 @@
 <?php
-    $para = "w1andersong2l3@gmail.com";
+    $para = "vendas@ibti.org.br";
     $nome = $_POST['name'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
@@ -19,10 +19,10 @@
     $headers .= "X-Sender:  <smtp.gmail.com>\n";
     $headers .= "X-Mailer: PHP  v".phpversion()."\n";
     $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
-    $headers .= "Return-Path:  <arley.souto@hotmail.com>\n";
+    $headers .= "Return-Path:  <vendas@ibti.org.br>\n";
     $headers .= "MIME-Version: 1.0\n";
     
-    if (!mail($para, $assunto, $mensagem, $headers, $port)){
+    if (mail($para, $assunto, $mensagem, $headers, $port)){
         echo "Erro ao enviar";
     } else{
         echo  "<script>alert('Email enviado com Sucesso!');location.href=\"/index.html\";</script>";
