@@ -1,3 +1,4 @@
+//using mailjet for send email in Microsoft Azure
 <?php
     $para = "vendas@ibti.org.br";
     $nome = $_POST['name'];
@@ -12,11 +13,11 @@
     $mensagem .= "<br><strong>Empresa: </strong>".$empresa;
     $mensagem .= "<br><strong>Cargo/Função: </strong>".$cargo;
     $mensagem .="<br> <strong> Mensagem: </strong>".$_POST['message'];
-    $port = 465;
+    $port = 587;
 
     $headers =  "Content-Type:text/html; charset=UTF-8\n";
-    $headers .= "From:  plataforma.ibti.org.br<smtp.gmail.com>\n";
-    $headers .= "X-Sender:  <smtp.gmail.com>\n";
+    $headers .= "From:  plataforma.ibti.org.br<in-v3.mailjet.com>\n";
+    $headers .= "X-Sender:  <in-v3.mailjet.com>\n";
     $headers .= "X-Mailer: PHP  v".phpversion()."\n";
     $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
     $headers .= "Return-Path:  <vendas@ibti.org.br>\n";
