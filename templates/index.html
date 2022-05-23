@@ -12,7 +12,7 @@
 	<meta name="og:image" property="og:image" content="https://abinc.org.br/site2020/wp-content/uploads/2020/08/IBTI.png">
   <meta name="og:description" property="og:description" content="IBTI Plataforma IoT">
 
-  <title> IBTI - Plataforma IoT - Index</title>
+  <title> IBTI - Plataforma IoT</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,6 +32,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Menu Dropdown Icons CSS File -->
+  <link href="assets/css/icons.css" rel="stylesheet">
+
+
 
   <!-- Previnir refresh na página -->
   <script type="text/javascript" src="jquery.js"></script>
@@ -67,19 +72,86 @@
      
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">A Plataforma</a></li>
-          <li><a class="nav-link scrollto" href="#why-us">Funcionalidades</a></li>
-          <li><a class="nav-link scrollto" href="#services">Diferenciais</a></li>
-          <li><a class="nav-link scrollto " href="#galeria">Aplicações</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#pricing">Preços</a></li>
-          <li><a class="nav-link scrollto" href="#team">Equipe</a></li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
-          
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+              <a href="#about"><i class="fi fi-rs-data-transfer"></i>A Plataforma</a>
+              <a class="nav-link scrollto" href="#why-us"> <i class="fi fi-rs-settings"></i>Funcionalidades</a>
+              <a class="nav-link scrollto" href="#services"><i class="fi fi-rr-settings-sliders"></i>Diferenciais</a>
+              <a class="nav-link scrollto " href="#galeria"><i class="fi fi-ss-map-marker"></i>Aplicações</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Produtos</a>
+            <div class="dropdown-content">
+                <a class="nav-link scrollto" href="#contact ">
+                  <i class="fi fi-rr-cloud-share"></i>
+                  <p>
+                  Cloud <br/>             
+                    <span>Utilize em Cloud</span>
+                  </p>  
+                </a>
+                <a href="#">
+                  <i class="fi fi-rs-users-alt"></i>
+                  <p>Comunidade <br/>
+                    <span>Edição Open Source</span>
+                  </p>  
+                </a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Desenvolvedores</a>
+            <div class="dropdown-content">
+                <a class="" href="# ">
+                  <i class="fi fi-rs-document"></i>
+                  <p>Documentação <br/>             
+                    <span>Saiba o que é a plataforma</span>
+                  </p>
+                </a>
+                
+                <a href="#">
+                  <i class="fi fi-rs-book-alt"></i>
+                  <p>Guia de Usuário <br/>
+                    <span>Guia de uso da plataforma</span>
+                  </p>
+                </a>
+                <a href="#">
+                  <i class="fi fi-rs-gym"></i>
+                  <p>Treinamento<br/>
+                    <span>Aprofunde conhecimentos</span>
+                  </p>
+                </a>
+                <a href="#"><i class="fi fi-rs-rocket"></i>
+                  <p>Guia de Instalação <br/>
+                    <span>Instale em seu servidor</span>
+                  </p>
+                </a>
+                
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">FAQ</a>
+            <div class="dropdown-content">
+                <a class="" href="# "><i class="fi fi-rs-interrogation"></i>
+                  <p>Perguntas Frequentes<br/>             
+                    <span>Dúvidas? Saiba mais</span>
+                  </p>
+                </a>
+            </div>
+          </li>
+
+          <li class="dropbtn">
+            <a class="nav-link scrollto" href="#contact">Contato</a>
+          </li>
+          <li class="dropbtn">
+            <a href="https://iotibti.ddns.net/login">Login</a>
+          </li>
           
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav> <!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -340,7 +412,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="assets/img/aplicacoes/smart-agriculture.jpg" class="img-fluid" alt="" >
             <div class="portfolio-info">
               <h4>Agronegócio</h4>
@@ -351,7 +423,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/aplicacoes/industry-logistic2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/aplicacoes/industry-logistic.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Indústria</h4>
               <p>Realiza um mapeamento e controle de determinadas áreas, para medições e rastreio  de objetos em tempo real, controle de estoque, controle de máquinas e na otimização de operações.</p>

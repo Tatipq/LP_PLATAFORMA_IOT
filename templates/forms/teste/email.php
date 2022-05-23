@@ -1,4 +1,3 @@
-//using mailjet for send email in Microsoft Azure
 <?php
     $para = "vendas@ibti.org.br";
     $nome = $_POST['name'];
@@ -23,7 +22,7 @@
     $headers .= "Return-Path:  <vendas@ibti.org.br>\n";
     $headers .= "MIME-Version: 1.0\n";
     
-    if (mail($para, $assunto, $mensagem, $headers, $port)){
+    if (!mail($para, $assunto, $mensagem, $headers, $port)){
         echo "Erro ao enviar";
     } else{
         echo  "<script>alert('Email enviado com Sucesso!');location.href=\"/index.html\";</script>";
