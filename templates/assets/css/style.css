@@ -586,14 +586,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Why Us - Funcionalidades
 --------------------------------------------------------------*/
 .why-us {
+
   padding-top: 10px;
 }
 
-.why-us .box {
-  width: 416px;
+.box {
+  width: 400px;
   height: 220px;
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -630,6 +631,34 @@ section {
 
 .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
+}
+
+/*Carousel*/
+
+.carousel {
+  background: #f2f2f2;
+  width: 1280px;
+  transition: all .3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev:hover {
+  background-color: #0A7A34;
+  width: 100px;
+}
+
+.carousel-control-next:hover {
+  background-color: #0A7A34;
+  width: 100px;
 }
 
 /*--------------------------------------------------------------
